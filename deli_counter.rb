@@ -20,6 +20,6 @@ end
 def take_a_number(katz_deli, customer)
   katz_deli.push(customer)
   puts "Welcome, #{customer}. You are number #{katz_deli.size} in line."
-  message = 
+  message = "Welcome, #{customer}. You are number #{katz_deli.size} in line."
   binding.pry
 end
