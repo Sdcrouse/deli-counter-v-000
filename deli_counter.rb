@@ -18,5 +18,6 @@ def line(customers)
 end
 
 def take_a_number(katz_deli, customer)
+  katz_deli.push(customer)
   
 end
