@@ -5,7 +5,10 @@ def line(customers)
   else
     line_order = ""
     
-    customers.
+    # Note that this is different from using #each_with_index
+    customers.each.with_index(1) do |customer, line_number|
+      line_order += "#{line_number}. #{customer} "
+    end
     
     puts "The line is currently: " + line_order
   end
