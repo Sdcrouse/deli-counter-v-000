@@ -5,15 +5,15 @@ def line(customers)
   if customers.size == 0 
     puts "The line is currently empty."
   else
-    line_order = ""
+    line_order = "The line is currently:"
     
     # Note that this is different from using #each_with_index
     customers.each.with_index(1) do |customer, line_number|
-      line_order += " #{line_number}. #{customer}"
+      line_order.push(" #{line_number}. #{customer}")
     end
     
     #binding.pry
-    puts "The line is currently:" + line_order
+    puts line_order
   end
 end
 
