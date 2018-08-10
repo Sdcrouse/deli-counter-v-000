@@ -1,3 +1,5 @@
+require 'pry'
+
 def line(customers)
   
   if customers.size == 0 
@@ -10,7 +12,7 @@ def line(customers)
       line_order += " #{line_number}. #{customer}"
     end
     
+    binding.pry
     puts "The line is currently:" + line_order
   end
-  
 end
