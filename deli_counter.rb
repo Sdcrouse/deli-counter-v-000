@@ -24,3 +24,4 @@ def take_a_number(katz_deli, customer)
   #message = "Welcome, #{customer}. You are number #{katz_deli.size} in line."
   #binding.pry
 end
+
