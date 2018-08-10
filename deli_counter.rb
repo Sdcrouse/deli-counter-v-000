@@ -8,8 +8,9 @@ def line(customers)
     line_message = "The line is currently:"
     
     # Note that this is different from using #each_with_index
+    # Also, #<< is defined for strings, but #push is NOT!
     customers.each.with_index(1) do |customer, line_number|
-      line_message.push(" #{line_number}. #{customer}")
+      line_message << " #{line_number}. #{customer}"
     end
     
     #binding.pry
