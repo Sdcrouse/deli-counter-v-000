@@ -31,5 +31,7 @@ def now_serving(katz_deli)
     puts "There is nobody waiting to be served!"
   else
     puts "Currently serving #{katz_deli.shift}."
+    # This uses less code than setting a variable to katz_deli.shift.
+    # But it may not be as easy to understand what I'm doing now.
   end
 end
