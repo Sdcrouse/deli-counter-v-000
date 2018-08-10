@@ -12,7 +12,6 @@ def line(customers)
     customers.each.with_index(1) do |customer, line_number|
       line_message << " #{line_number}. #{customer}"
     end
-    
     #binding.pry
     puts line_message
   end
