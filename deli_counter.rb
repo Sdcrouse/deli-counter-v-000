@@ -12,7 +12,8 @@ def line(customers)
       line_order += " #{line_number}. #{customer}"
     end
     
-    binding.pry
+    #binding.pry
     puts "The line is currently:" + line_order
   end
 end
+
